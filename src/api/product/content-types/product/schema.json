@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true
+    },
+    "address": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "offer": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "room",
+        "bike",
+        "food",
+        "water"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "intime": {
+      "type": "string"
+    },
+    "outtime": {
+      "type": "string"
+    },
+    "extraRules": {
+      "type": "string"
+    }
+  }
+}
